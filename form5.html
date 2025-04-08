@@ -1,43 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Contact Form with Grid Layout</title>
+    <title>Contact Form with Labels</title>
     <meta charset="utf-8">
     <style>
-        form {
-            display: grid;
-            grid-template-columns: auto 1fr; /* Two columns: auto width for label, 1fr for input */
-            grid-gap: 10px;
-            width: 300px;
-        }
+        /* Basic CSS for non-grid layout (as in Figure 9.19) */
         label {
-            text-align: right;
-            padding-right: 10px;
+            display: block;
+            margin-bottom: 5px;
             font-weight: bold;
         }
         input[type="text"],
         input[type="email"],
         textarea {
+            width: 200px;
             padding: 5px;
+            margin-bottom: 10px;
             border: 1px solid #ccc;
             box-sizing: border-box;
-            width: 100%;
         }
         textarea {
             vertical-align: top;
         }
-        button[type="submit"],
         input[type="submit"],
         input[type="reset"] {
             padding: 8px 15px;
-            grid-column: 2; /* Place buttons in the second column */
-            width: auto;
         }
     </style>
 </head>
 <body>
     <h1>Contact Us</h1>
-    <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+    <form>
         <div>
             <label for="myName">Name:</label>
             <input type="text" name="myName" id="myName">
