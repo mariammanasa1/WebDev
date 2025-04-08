@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>New Form</title>
+    <meta charset="utf-8">
+</head>
+<body>
+
+<h1>New Form</h1>
+
+<form method="post" action="https://webdevbasics.net/scripts/demo.php">
+
+    <div>
+        <!-- a) Text box for username -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" maxlength="30"><br><br>
+    </div>
+
+    <div>
+        <!-- b) Group of radio buttons for favorite day of the week -->
+        <p>Favorite Day of the Week:</p>
+        <input type="radio" id="monday" name="favoriteDay" value="Monday">
+        <label for="monday">Monday</label><br>
+        <input type="radio" id="tuesday" name="favoriteDay" value="Tuesday">
+        <label for="tuesday">Tuesday</label><br>
+        <input type="radio" id="wednesday" name="favoriteDay" value="Wednesday">
+        <label for="wednesday">Wednesday</label><br>
+        <input type="radio" id="thursday" name="favoriteDay" value="Thursday">
+        <label for="thursday">Thursday</label><br>
+        <input type="radio" id="friday" name="favoriteDay" value="Friday">
+        <label for="friday">Friday</label><br>
+        <input type="radio" id="saturday" name="favoriteDay" value="Saturday">
+        <label for="saturday">Saturday</label><br>
+        <input type="radio" id="sunday" name="favoriteDay" value="Sunday">
+        <label for="sunday">Sunday</label><br><br>
+    </div>
+
+    <div>
+        <!-- c) Select list for favorite social networking site -->
+        <label for="favoriteSocial">Favorite Social Networking Site:</label>
+        <select name="favoriteSocial" id="favoriteSocial">
+            <option value="facebook">Facebook</option>
+            <option value="twitter">Twitter</option>
+            <option value="instagram">Instagram</option>
+            <option value="linkedin">LinkedIn</option>
+            <option value="tiktok">TikTok</option>
+            <option value="other">Other</option>
+        </select><br><br>
+    </div>
+
+    <div>
+        <!-- d) Fieldset and legend for Shipping Address -->
+        <fieldset>
+            <legend>Shipping Address</legend>
+            <label for="addressline1">Address Line 1:</label>
+            <input type="text" id="addressline1" name="addressline1"><br><br>
+            <label for="addressline2">Address Line 2:</label>
+            <input type="text" id="addressline2" name="addressline2"><br><br>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city"><br><br>
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state"><br><br>
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" name="zip"><br><br>
+        </fieldset><br>
+    </div>
+
+    <div>
+        <!-- e) Image button -->
+        <input type="image" src="signup.gif" alt="Sign Up Button"><br><br>
+    </div>
+
+    <!-- f) Hidden input control -->
+    <input type="hidden" name="userid" id="userid" value="someUserIdentifier">
+
+    <div>
+        <!-- g) Password box -->
+        <label for="pword">Password:</label>
+        <input type="password" id="pword" name="pword"><br><br>
+    </div>
+
+    <!-- h) The <form> tag is already configured at the beginning -->
+
+    <input type="submit" value="Submit Form">
+
+</form>
+
+</body>
+</html>
